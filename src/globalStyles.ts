@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import colors from './utils/colors';
 
 const GlobalStyle = createGlobalStyle`
   *,
@@ -10,6 +11,17 @@ const GlobalStyle = createGlobalStyle`
   body, html {
     padding:0;
     margin:0;
+  }
+  body {
+    font-family: Work Sans;
+  }
+  h1, h2 {
+    font-family: Poppins;
+  }
+
+  p {
+    color: ${colors.text};
+    margin: 0;
   }
 `;
 
