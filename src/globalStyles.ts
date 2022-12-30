@@ -23,6 +23,11 @@ const GlobalStyle = createGlobalStyle`
     color: ${colors.text};
     margin: 0;
   }
+
+  a {
+    text-decoration: none;
+    color: ${colors.text};
+  }
 `;
 
 export default GlobalStyle;

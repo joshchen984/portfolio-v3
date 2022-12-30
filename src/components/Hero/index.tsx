@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { graphql, useStaticQuery } from 'gatsby';
 import { getImage } from 'gatsby-plugin-image';
 import { convertToBgImage } from 'gbimage-bridge';
@@ -38,6 +40,18 @@ const About = styled.p`
   max-width: 75%;
 `;
 
+const IconContainer = styled.div`
+  margin-top: 1rem;
+  color: ${colors.text};
+`;
+
+type IconProps = {
+  first?: boolean;
+};
+const Icon = styled(FontAwesomeIcon)<IconProps>`
+  margin: 0 ${(props) => (props.first ? 0 : '1rem')};
+`;
+
 export const Hero = () => {
   const { backgroundImage } = useStaticQuery(
     graphql`
@@ -66,6 +80,22 @@ export const Hero = () => {
             I’m a high school senior planning on majoring in CS. I enjoy
             software development and machine learning.
           </About>
+          <IconContainer>
+            <a
+              href="https://github.com/joshchen984"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icon icon={faGithub} size="xl" first />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/joshua-chen-ab499025b/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icon icon={faLinkedin} size="xl" />
+            </a>
+          </IconContainer>
         </HeroTextContainer>
       </Layout>
     </Wrapper>
