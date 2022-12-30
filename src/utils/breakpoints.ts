@@ -3,7 +3,7 @@ const size = {
   tablet: '768px',
   laptop: '1024px',
   laptopL: '1440px',
-}
+};
 
 export const device = {
   mobileL: `(min-width: ${size.mobileL})`,

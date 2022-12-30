@@ -23,6 +23,7 @@
     "@fortawesome/free-regular-svg-icons": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@types/react-responsive": "^8.0.5",
     "@types/styled-components": "^5.1.26",
     "babel-plugin-styled-components": "^2.0.7",
     "gatsby": "^5.3.3",
@@ -36,6 +37,7 @@
     "gbimage-bridge": "^0.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-responsive": "^9.0.2",
     "styled-components": "^5.3.6"
   },
   "devDependencies": {
