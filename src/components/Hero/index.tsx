@@ -10,7 +10,6 @@ import Background from './Background';
 const Wrapper = styled.section`
   width: 100%;
   height: 100vh;
-  background-color: ${colors.background};
   z-index: -102;
   position: relative;
 `;

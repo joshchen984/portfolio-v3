@@ -10,11 +10,11 @@ const Layout = styled.div`
   }
 
   @media ${device.laptop} {
-    padding: 0 15rem;
+    padding: 0 12rem;
   }
 
   @media ${device.laptopL} {
-    padding: 0 25rem;
+    padding: 0 20rem;
   }
 `;
 export default Layout;
