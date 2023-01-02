@@ -24,8 +24,16 @@ type ButtonProps = {
   children: React.ReactNode;
   href: string;
   className?: string;
+  sameTab?: boolean;
 };
-const Button = ({ children, href, className }: ButtonProps) => {
+const Button = ({ children, href, className, sameTab }: ButtonProps) => {
+  if (sameTab) {
+    return (
+      <StyledButton href={href} className={className}>
+        {children}
+      </StyledButton>
+    );
+  }
   return (
     <StyledButton
       href={href}

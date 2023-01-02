@@ -17,7 +17,7 @@ const Wrapper = styled.section`
 const Projects = () => {
   const isTablet = useMediaQuery({ query: device.tablet });
   return (
-    <Wrapper>
+    <Wrapper id="projects">
       <Layout smallPadding>
         <Heading marginBottom>Projects</Heading>
         <div>

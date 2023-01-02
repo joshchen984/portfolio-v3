@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
   body, html {
     padding:0;
     margin:0;
+    scroll-behavior: smooth;
   }
   body {
     font-family: Work Sans;

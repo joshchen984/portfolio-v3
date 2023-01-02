@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import colors from '../../utils/colors';
 import { device } from '../../utils/breakpoints';
 import Background from './Background';
-import Socials from '../Socials';
+import Button from '../Button';
 
 const Wrapper = styled.section`
   width: 100%;
@@ -46,7 +46,7 @@ const Name = styled.h1`
 
 const About = styled.p`
   max-width: 75%;
-
+  margin-bottom: 3rem;
   @media ${device.laptop} {
     max-width: 400px;
     font-size: 1.25rem;
@@ -55,17 +55,6 @@ const About = styled.p`
   @media ${device.laptopL} {
     font-size: 1.5rem;
     max-width: 450px;
-  }
-`;
-
-const StyledSocials = styled(Socials)`
-  margin-top: 1rem;
-
-  @media ${device.laptop} {
-    font-size: 1.25rem;
-  }
-  @media ${device.laptopL} {
-    font-size: 1.5rem !important;
   }
 `;
 
@@ -97,7 +86,9 @@ const Hero = () => {
             I’m a high school senior planning on majoring in CS. I enjoy
             software development and machine learning.
           </About>
-          <StyledSocials />
+          <Button href="#projects" sameTab>
+            View my projects
+          </Button>
         </HeroTextContainer>
       </TextWrapper>
     </Wrapper>
