@@ -4,7 +4,6 @@ import GlobalStyle from '../globalStyles';
 import Hero from '../components/Hero';
 import Skills from '../components/Skills';
 import Projects from '../components/Projects';
-
 import { Helmet } from 'react-helmet';
 import Footer from '../components/Footer';
 
