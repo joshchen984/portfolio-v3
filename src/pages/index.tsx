@@ -1,8 +1,10 @@
 import * as React from 'react';
 import type { HeadFC, PageProps } from 'gatsby';
 import GlobalStyle from '../globalStyles';
-import { Hero } from '../components/Hero';
+import Hero from '../components/Hero';
 import Skills from '../components/Skills';
+import Projects from '../components/Projects';
+
 import { Helmet } from 'react-helmet';
 
 const IndexPage: React.FC<PageProps> = () => {
@@ -19,6 +21,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <main>
         <Hero />
         <Skills />
+        <Projects />
       </main>
     </>
   );

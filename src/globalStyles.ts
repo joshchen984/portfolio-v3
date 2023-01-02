@@ -16,7 +16,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: Work Sans;
     background-color: ${colors.background};
   }
-  h1, h2 {
+  h1, h2, h3 {
     font-family: Poppins;
   }
 

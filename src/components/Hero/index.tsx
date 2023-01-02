@@ -80,11 +80,27 @@ const Icon = styled(FontAwesomeIcon)<IconProps>`
   margin: 0 ${(props) => (props.$first ? 0 : '1rem')};
 `;
 
-export const Hero = () => {
+const TextWrapper = styled.div`
+  padding: 0 1rem;
+
+  @media ${device.tablet} {
+    padding: 0 10rem;
+  }
+
+  @media ${device.laptop} {
+    padding: 0 12rem;
+  }
+
+  @media ${device.laptopL} {
+    padding: 0 20rem;
+  }
+`;
+
+const Hero = () => {
   return (
     <Wrapper>
       <Background />
-      <Layout>
+      <TextWrapper>
         <HeroTextContainer>
           <HelloText>Hello, my name is</HelloText>
           <Name>Josh Chen</Name>
@@ -109,7 +125,8 @@ export const Hero = () => {
             </a>
           </IconContainer>
         </HeroTextContainer>
-      </Layout>
+      </TextWrapper>
     </Wrapper>
   );
 };
+export default Hero;
