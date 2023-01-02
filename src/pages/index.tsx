@@ -18,6 +18,10 @@ const IndexPage: React.FC<PageProps> = () => {
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
         />
+        <meta
+          name="description"
+          content="I’m a high school senior planning on majoring in CS. I enjoy software development and machine learning."
+        />
       </Helmet>
       <main>
         <Hero />
