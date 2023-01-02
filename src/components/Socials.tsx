@@ -7,10 +7,7 @@ import { device } from '../utils/breakpoints';
 
 const IconContainer = styled.div`
   color: ${colors.text};
-
-  @media ${device.laptop} {
-    font-size: 1.25rem;
-  }
+  font-size: 1.25rem;
 `;
 
 type IconProps = {

@@ -7,7 +7,7 @@ import { device } from '../../utils/breakpoints';
 
 const StyledImage = styled(GatsbyImage)`
   height: 100vh;
-  position: absolute;
+  position: absolute !important;
   bottom: 0;
   right: 0;
   z-index: -101;
@@ -21,7 +21,7 @@ export const Background = () => {
   const { backgroundImage, backgroundImageBig } = useStaticQuery(
     graphql`
       query MyQuery {
-        backgroundImage: file(relativePath: { eq: "hero.png" }) {
+        backgroundImage: file(relativePath: { eq: "hero.webp" }) {
           childImageSharp {
             gatsbyImageData(
               width: 1400
@@ -30,7 +30,7 @@ export const Background = () => {
             )
           }
         }
-        backgroundImageBig: file(relativePath: { eq: "hero-big.png" }) {
+        backgroundImageBig: file(relativePath: { eq: "hero-big.webp" }) {
           childImageSharp {
             gatsbyImageData(
               width: 1920
@@ -53,7 +53,7 @@ export const Background = () => {
   }
   return (
     <>
-      <StyledImage image={image!} alt="hero image" />
+      <StyledImage image={image!} alt="hero image" style={{}} />
     </>
   );
 };

@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import Heading from '../Heading';
 import Layout from '../Layout';
 
-import WriteMyVideoImage from '../../images/writemyvideo.png';
-import ClassityImage from '../../images/classity.png';
-import MathpathImage from '../../images/mathpath.png';
+import WriteMyVideoImage from '../../images/writemyvideo.webp';
+import ClassityImage from '../../images/classity.webp';
+import MathpathImage from '../../images/mathpath.webp';
 import Project from './Project';
 import { useMediaQuery } from 'react-responsive';
 import { device } from '../../utils/breakpoints';
