@@ -1,16 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import Layout from '../Layout';
 import colors from '../../utils/colors';
 import { device } from '../../utils/breakpoints';
 import Background from './Background';
+import Socials from '../Socials';
 
 const Wrapper = styled.section`
   width: 100%;
   height: 100vh;
-  z-index: -102;
   position: relative;
 `;
 
@@ -61,28 +58,20 @@ const About = styled.p`
   }
 `;
 
-const IconContainer = styled.div`
+const StyledSocials = styled(Socials)`
   margin-top: 1rem;
-  color: ${colors.text};
 
   @media ${device.laptop} {
     font-size: 1.25rem;
   }
   @media ${device.laptopL} {
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
   }
-`;
-
-type IconProps = {
-  $first?: boolean;
-};
-const Icon = styled(FontAwesomeIcon)<IconProps>`
-  margin: 0 ${(props) => (props.$first ? 0 : '1rem')};
 `;
 
 const TextWrapper = styled.div`
   padding: 0 1rem;
-
+  position: relative;
   @media ${device.tablet} {
     padding: 0 10rem;
   }
@@ -108,22 +97,7 @@ const Hero = () => {
             I’m a high school senior planning on majoring in CS. I enjoy
             software development and machine learning.
           </About>
-          <IconContainer>
-            <a
-              href="https://github.com/joshchen984"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Icon icon={faGithub} size="xl" $first />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/joshua-chen-ab499025b/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Icon icon={faLinkedin} size="xl" />
-            </a>
-          </IconContainer>
+          <StyledSocials />
         </HeroTextContainer>
       </TextWrapper>
     </Wrapper>

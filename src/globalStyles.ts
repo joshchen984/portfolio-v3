@@ -28,6 +28,7 @@ const GlobalStyle = createGlobalStyle`
   a {
     text-decoration: none;
     color: ${colors.text};
+    cursor: pointer;
   }
 `;
 

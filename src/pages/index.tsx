@@ -6,6 +6,7 @@ import Skills from '../components/Skills';
 import Projects from '../components/Projects';
 
 import { Helmet } from 'react-helmet';
+import Footer from '../components/Footer';
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -23,6 +24,7 @@ const IndexPage: React.FC<PageProps> = () => {
         <Skills />
         <Projects />
       </main>
+      <Footer />
     </>
   );
 };
