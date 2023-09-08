@@ -35,7 +35,7 @@ const Socials = ({ className }: SocialsProps) => {
         <Icon icon={faGithub} size="xl" $first />
       </a>
       <a
-        href="https://www.linkedin.com/in/joshua-chen-ab499025b/"
+        href="https://www.linkedin.com/in/joshchen984/"
         target="_blank"
         rel="noopener noreferrer"
       >

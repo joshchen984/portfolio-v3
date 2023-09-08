@@ -83,8 +83,8 @@ const Hero = () => {
           <HelloText>Hello, my name is</HelloText>
           <Name>Josh Chen</Name>
           <About>
-            I’m a high school senior planning on majoring in CS. I enjoy
-            software development and machine learning.
+            I'm a CS major at the University of Pennsylvania. I'm interested in
+            software development and edtech.
           </About>
           <Button href="#projects" sameTab>
             View my projects
