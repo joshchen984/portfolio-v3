@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Heading from '../Heading';
 import Layout from '../Layout';
 
+import PromptleImage from '../../images/promptle.webp';
 import WriteMyVideoImage from '../../images/writemyvideo.webp';
 import ClassityImage from '../../images/classity.webp';
 import MathpathImage from '../../images/mathpath.webp';
@@ -21,6 +22,15 @@ const Projects = () => {
       <Layout smallPadding>
         <Heading marginBottom>Projects</Heading>
         <div>
+          <Project
+            image={PromptleImage}
+            imageAlt="screenshot of Promptle"
+            name="Promptle"
+            description="Won Best GPT Wrapper in the University of Pennsylvania Generative AI Hackathon. A video game where players have to guess the keywords used to create various AI-generated images."
+            link="https://github.com/joshchen984/Promptle"
+            buttonText="Source Code"
+            textRight={!isTablet}
+          />
           <Project
             image={WriteMyVideoImage}
             imageAlt="screenshot of WriteMyVideo"
