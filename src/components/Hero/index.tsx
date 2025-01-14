@@ -74,6 +74,11 @@ const TextWrapper = styled.div`
   }
 `;
 
+const ButtonContainer = styled.div`
+  display: flex;
+  gap: 1rem;
+`;
+
 const Hero = () => {
   return (
     <Wrapper>
@@ -83,12 +88,15 @@ const Hero = () => {
           <HelloText>Hello, my name is</HelloText>
           <Name>Josh Chen</Name>
           <About>
-            I'm a CS major at the University of Pennsylvania. I'm interested in
-            software development and edtech.
+            I'm a CS major at the University of Pennsylvania interested in
+            software development.
           </About>
-          <Button href="#projects" sameTab>
-            View my projects
-          </Button>
+          <ButtonContainer>
+            <Button href="#projects" sameTab>
+              View my projects
+            </Button>
+            <Button href="https://blog.joshchen984.com/">My Book Blog</Button>
+          </ButtonContainer>
         </HeroTextContainer>
       </TextWrapper>
     </Wrapper>
